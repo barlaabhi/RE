@@ -7,7 +7,6 @@ section .data
 	spec: db "%s",0
 	st: db "%c",10,0
 	
-
 section .text
 
 	global main
@@ -22,8 +21,6 @@ main:
 	push eax
 	push spec
 	call scanf
-	
-	xor ebx,ebx
 
 	lea esi,[ebp-0xc]
 	jmp part_b
